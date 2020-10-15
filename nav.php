@@ -9,7 +9,7 @@
         <!-- Custom ss -->
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body >
     
     <header >
         <nav class="container">

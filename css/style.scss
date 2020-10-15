@@ -35,6 +35,7 @@ header{
 
 nav{
 
+
     height: 70px;
     display: flex;
     justify-content: space-between;
@@ -70,6 +71,14 @@ nav{
 }
 
 @media (max-width : 992px){
+    .bg_blur.active{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(255, 255, 255, 0.952);
+    }
 
     header{
         transition : background 500ms ease-in-out;
@@ -153,6 +162,7 @@ nav{
                 display: none;
             }
         }
+
 
         & .nav__menu.active ul{
             opacity: 1;
