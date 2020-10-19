@@ -12,7 +12,7 @@ session_start();
 
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body id="Home">
+<body>
 
 <?php
     include 'nav.php'
@@ -21,6 +21,7 @@ session_start();
 
 
 <main>
+    <section  id="Home">
         <div class="container">
             <div class="details">
                 <div class="details__container">
@@ -53,9 +54,11 @@ session_start();
                 </div>
             </div>
         </div>
+        </section>
 
+        <section id="Qualification">
         <div class="container">
-        <div id="Qualification" class="qualification">
+        <div  class="qualification">
                 <div class="qualification__container">
                     <div class="qualification__content">
                         <div class="qualification__content__detail">
@@ -88,9 +91,11 @@ session_start();
                 </div>
             </div>
         </div>
+        </section>
 
+        <section  id="Projects">
         <div class="container">
-        <div id="Projects" class="project">
+        <div class="project">
                 <div class="project__container">
                     <div class="project__content">
                         <div class="project__content__detail">
@@ -117,9 +122,11 @@ session_start();
                 </div>
             </div>
         </div>
+        </section>
 
+        <section id="Contact">
         <div class="container">
-            <div id="Contact" class="contact__container">
+            <div  class="contact__container">
                 <div class="contact">
                     <h1>Contact</h1>
                 </div>
@@ -144,7 +151,7 @@ session_start();
                 </div>
             </div>
         </div>
-
+</section>
 
     </main>
 

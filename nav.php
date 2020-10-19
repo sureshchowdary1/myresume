@@ -22,7 +22,7 @@
 
             <div class="nav__menu">
                 <ul>
-                    <li class="color"><a href="#Home" class="nav_links">Home</a></li>
+                    <li ><a href="#Home" class="nav_links color">Home</a></li>
                     <li><a href="#Qualification"  class="nav_links">Qualification</a></li>
                     <li><a href="#Projects" class="nav_links">Projects</a></li>
                     <li><a href="#Contact" class="nav_links">Contact</a></li>

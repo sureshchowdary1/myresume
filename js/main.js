@@ -20,16 +20,50 @@ function menu(){
 
 menu()
 
+        // End of toggle menu
+
+
         // To chaneg the active class and add to the clicked link
 
 function selectActiveClass(){
-    const activeClass = document.querySelector('.nav .nav__menu ul li a')
-    
-    $(document).on('click' , 'ul li' , function() {
-		$(this).addClass('active').siblings().removeClass('active')
+
+    $(document).on('click' , 'nav .nav__menu ul li a' , function() {
+		$(this).addClass('color').siblings().removeClass('color')
 })
 }
 
 selectActiveClass()
 
-        // End of toggle menu
+
+        // To change the active class on scrolling 
+
+var sections  =  document.querySelectorAll('section')
+
+onscroll = function() {
+    var scrollPosition = document.documentElement.scrollTop;
+
+    sections.forEach((section) => {
+        if(
+            scrollPosition >= section.offsetTop - section.offsetHeight * 0.90
+            &&
+            scrollPosition < section.offsetTop + section.offsetHeight - section.offsetHeight * 0.90
+        ){
+            var currentId = section.attributes.id.value
+            removeActiveClasses();
+            addActiveClass(currentId);
+        }
+    });
+};
+
+var removeActiveClasses = function () {
+    document.querySelectorAll('nav .nav__menu ul li a').forEach((e) => {
+        e.classList.remove('color');
+    });
+};
+
+var addActiveClass = function (id) {
+    console.log(id);
+
+    var selector =`nav .nav__menu ul li a[href = "#${id}"]`;
+    document.querySelector(selector).classList.add('color')
+}
