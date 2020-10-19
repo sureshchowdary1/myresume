@@ -8,21 +8,19 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Details Form</title>
+    <title>Details </title>
 
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body id="home">
+<body id="Home">
 
 <?php
     include 'nav.php'
 ?>
 
-<div class="bg_blur">
 
-</div>
 
-<main >
+<main>
         <div class="container">
             <div class="details">
                 <div class="details__container">
@@ -56,7 +54,7 @@ session_start();
             </div>
         </div>
 
-         <div class="container">
+        <div class="container">
         <div id="Qualification" class="qualification">
                 <div class="qualification__container">
                     <div class="qualification__content">
@@ -65,7 +63,7 @@ session_start();
 
                           <p>Highest qualification is <b>Btech</b></p>
                             
-                          <h2>Skills</h2>
+                          <h1>Skills</h1>
                           <h6>Progamming Languages</h6>
                           <ul class="pl">
                                 <li>HTML</li>
@@ -77,7 +75,7 @@ session_start();
                                 <li>MYSQL (Basics)</li>
                           </ul>
 
-                          <h4>Designing</h4>
+                          <h6>Designing</h6>
                           <ul class="ds">
                             <li>Figma</li>
                             <li>Adobe Photoshop XD</li>
@@ -92,7 +90,7 @@ session_start();
         </div>
 
         <div class="container">
-        <div class="project">
+        <div id="Projects" class="project">
                 <div class="project__container">
                     <div class="project__content">
                         <div class="project__content__detail">
@@ -106,11 +104,11 @@ session_start();
 
                           <h2>Few Projects are mentioned below for reference</h2>
                           <ul class="list">
-                                <li><a href = "">SEOS</a></li>
-                                <li><a href = "">Purple Crest</a></li>
-                                <li><a href = "">Coach</a></li>
-                                <li><a href = "">Rosa</a></li>
-                                <li><a href = "">LifeLeck</a></li>
+                                <li><a href = "./Seos/seos.php" target="_blank">SEOS</a></li>
+                                <li><a href = "./purple crest/purple.php" target="_blank">Purple Crest</a></li>
+                                <li><a href = "./Coach/coach.php" target="_blank">Coach</a></li>
+                                <li><a href = "./Rosa/rosa.php" target="_blank">Rosa</a></li>
+                                <li><a href = "./Lifeleck/Lifeleck.php" target="_blank">LifeLeck</a></li>
                           </ul>
 
                           <p>Projects mentioned are taken reference from Google and other platforms</p>
@@ -121,7 +119,7 @@ session_start();
         </div>
 
         <div class="container">
-            <div class="contact__container">
+            <div id="Contact" class="contact__container">
                 <div class="contact">
                     <h1>Contact</h1>
                 </div>
@@ -129,17 +127,20 @@ session_start();
                     <div class="contact__mail">
                         <p>Gmail : sureshchowdary210@gmail.com</p>
 
-                        <ul>
-                            
-                            <li><a href="#facebook" class="fa fa-facebook-official"></a></li>
-                            <li><a href="#instagram" class="fa fa-instagram"></a></li>
-                            <li><a href="#linkedin" class="fa fa-linkedin"></a></li>
-                            <li><a href="#email" class="fa fa-envelope"></a></li>
-                        </ul>
+                       
                     </div>
                     <div class="contact__num">
                         <p>Contact : +91 - 7288975252</p>
                     </div>
+                </div>
+                <div class="contact__sm">
+                     <ul>
+                            
+                        <li><a href="https://www.facebook.com/suresh.kishu" target="_blank"  class="fa fa-facebook-official"></a></li>
+                        <li><a href="https://www.instagram.com/suresh_11421" target="_blank" class="fa fa-instagram"></a></li>
+                        <li><a  href="https://www.linkedin.com/in/suresh-chowdary-42956b1b9" target="_blank" class="fa fa-linkedin"></a></li>
+                        <li><a disabled target="_blank" class="fa fa-envelope"></a></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -148,16 +149,18 @@ session_start();
     </main>
 
     <footer class="footer">
-        <div class="footer__container">
+        <div class="footer__container container">
         <div class="footer__logo__content">
             <div class="footer__logo">
-                <img src="./img/logo.svg" alt="">
+                <a href= "#Home">
+                    <img src="./img/logo.svg" alt="">
+                </a>
             </div>
             <div class="footer__menu__list">
                 <ul>
-                    <li><a href="#">Qualification</a></li>
-                    <li><a href="#">Project</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#Qualification">Qualification</a></li>
+                    <li><a href="#Projects">Project</a></li>
+                    <li><a href="#Contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -168,7 +171,7 @@ session_start();
             <button>Submit</button>
         </div>
         <div class="footer__contact">
-            <a href="#">
+            <a href="#Home">
             <div class="footer__home">
                     <div class="fa fa-caret-up"></div>
                </div>
@@ -177,10 +180,8 @@ session_start();
         </div>
         </div>
 
-        <h6>Made with love <i class="fa fa-heart" aria-hidden="true"></i>
- </h6>
-    </footer> 
-
+        <h6>Made with love <i class="fa fa-heart" aria-hidden="true"></i>  &nbsp; &nbsp; Thank you <i class="fa fa-handshake-o" aria-hidden="true"></i></h6>
+    </footer>
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>

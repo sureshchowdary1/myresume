@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- Custom ss -->
     <link rel="stylesheet" href="css/style.css">
-</head>
-<body >
     
-    <header >
+</head>
+<body>
+    
+    <header  >
         <nav class="container">
             <div class="logo">
                 <a href="#Home">
@@ -21,21 +22,23 @@
 
             <div class="nav__menu">
                 <ul>
-                    <li><a href="#Home" class="nav_links active">Home</a></li>
-                    <li><a href="#Qualification" class="nav_links">Qualification</a></li>
+                    <li class="color"><a href="#Home" class="nav_links">Home</a></li>
+                    <li><a href="#Qualification"  class="nav_links">Qualification</a></li>
                     <li><a href="#Projects" class="nav_links">Projects</a></li>
                     <li><a href="#Contact" class="nav_links">Contact</a></li>
-                    <li><a href="#UpcomingProjects" class="nav_links">UpcomingProjects</a></li>
                 </ul>
             </div>
 
-            <div class="toggle__menu">
+            <div class="toggle__menu ">
                 <div class="menu fa fa-bars"></div>
                 <div class="close fa fa-close"></div>
             </div>
         </nav>
     </header>
 
+    <div class="bg__blur ">
+    
+    </div>
         <!-- Custom JS -->
     <!-- <script src="js/main.js"></script> -->
 </body>
